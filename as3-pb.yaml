@@ -32,3 +32,7 @@
   - name: DEBUG OUT AS3 VIRT IP
     debug:
       msg: "Here is the virtual IP: {{as3_response.json.declaration.arch.arch_A1.app.virtualAddresses | nice_to_json }}"
+
+  - name: DEBUG ALL VARS
+    debug:
+      msg: "{{ vars }}"
